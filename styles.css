@@ -1,0 +1,34 @@
+:root {
+    ---timing-function: cubic-bezier(0.4, 0, 0.2);
+    ---animation-duration: 250ms;
+}
+.gallery__item {
+    display: grid;
+    max-width: 1140px;
+    justify-content: center;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+}
+.gallery__item{
+    position: relative;
+
+}
+.gallery__image:hover {
+    transform: scale(1.03);
+}
+.gallery__image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform var(---animation-duration);
+}
+.gallery__link{
+    display: block;
+    height: 100%;
+    text-decoration: none;
+}
+.gallery__link:hover{
+    cursor: zoom-in;
+}
